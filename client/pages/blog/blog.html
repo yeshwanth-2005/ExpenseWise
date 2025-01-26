@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - ExpenseWise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../index.css">    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/pages/dashboard/dashboard.html">
+                <i class="bi bi-wallet2 text-primary fs-3 me-2"></i>
+                <span class="fw-bold">ExpenseWise</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/dashboard/dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/expense/expense.html">Expense</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/income/income.html">Income</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/pages/blog/blog.html">Blog</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-danger" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Financial Tips & Insights</h2>
+            <div class="row g-4">
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="./images/Featured.jpg" class="img-fluid rounded-start h-100" alt="Featured">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Featured</span>
+                                    <h3 class="card-title">Master Your Personal Finances</h3>
+                                    <p class="card-text">Learn the essential strategies for managing your money effectively and building long-term wealth.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#financeDetails" role="button" aria-expanded="false" aria-controls="financeDetails" onclick="toggleText(this)">Read More</a>
+                                </div>
+                            </div>
+                            <div class="collapse" id="financeDetails">
+                                <div class="card card-body">
+                                    <h2 class="card-title">Master Your Personal Finances</h2>
+                                    <p class="card-text">Learn the essential strategies for mastering your finances and securing your financial future.</p>
+                                    <hr>
+                                    <p class="card-text"><strong>Create a Comprehensive Financial Plan</strong><br>
+                                        Include budgeting, savings, investments, and debt repayment strategies in a holistic plan that aligns with your short- and long-term goals.
+                                    </p>
+                                    <p class="card-text"><strong>Understand Your Net Worth</strong><br>
+                                        Calculate the difference between your assets (what you own) and liabilities (what you owe) to measure your financial health.
+                                    </p>
+                                    <p class="card-text"><strong>Diversify Your Investment Portfolio</strong><br>
+                                        Don't put all your money in one asset class. Spread your investments across stocks, bonds, real estate, and other options.
+                                    </p>
+                                    <p class="card-text"><strong>Build Credit Wisely</strong><br>
+                                        Maintain a good credit score by paying bills on time, keeping your credit utilization low, and regularly checking your credit report.
+                                    </p>
+                                    <p class="card-text"><strong>Seek Professional Advice</strong><br>
+                                        Consult with financial planners or advisors to tailor a financial strategy suited to your needs.
+                                    </p>
+                                </div>   
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./images/Savings.jpg" class="card-img-top" alt="Savings">
+                        <div class="card-body">
+                            <h5 class="card-title">10 Simple Ways to Save Money</h5>
+                            <p class="card-text">Discover practical tips and strategies to help you save money effectively.</p>
+                            <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#savingsDetails" role="button" aria-expanded="false" aria-controls="savingsDetails" onclick="toggleText(this)">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./images/Investment.jpg" class="card-img-top" alt="Investment">
+                        <div class="card-body">
+                            <h5 class="card-title">Investment Basics for Beginners</h5>
+                            <p class="card-text">Learn the fundamentals of investing and how to grow your wealth.</p>
+                            <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#investmentDetails" role="button" aria-expanded="false" aria-controls="investmentDetails" onclick="toggleText(this)">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="savingsDetails">
+                    <div class="card card-body">
+                        <h2 class="card-title">10 Simple Ways to Save Money</h2>
+                        <p class="card-text">Discover practical tips and strategies to help you save money effectively and reach your financial goals.</p>
+                        <hr>
+                        <p class="card-text"><strong>Create a Budget</strong><br>
+                            Track your income and expenses to understand where your money is going and identify areas to cut back.
+                        </p>
+                        <p class="card-text"><strong>Cut Unnecessary Subscriptions</strong><br>
+                            Review your recurring subscriptions and eliminate those you don’t use or need.
+                        </p>
+                        <p class="card-text"><strong>Cook at Home</strong><br>
+                            Save money by cooking meals at home instead of dining out or ordering takeout.
+                        </p>
+                        <p class="card-text"><strong>Use Coupons and Discounts</strong><br>
+                            Take advantage of coupons, cashback offers, and sales to reduce your shopping expenses.
+                        </p>
+                        <p class="card-text"><strong>Limit Impulse Purchases</strong><br>
+                            Plan your purchases and avoid making impulse buys that can add up over time.
+                        </p>
+                        <p class="card-text"><strong>Negotiate Bills</strong><br>
+                            Contact service providers to negotiate lower rates on your bills, such as internet, phone, or insurance.
+                        </p>
+                        <p class="card-text"><strong>Automate Savings</strong><br>
+                            Set up automatic transfers to a savings account to ensure you save regularly, even without thinking about it.
+                        </p>
+                        <p class="card-text"><strong>Buy in Bulk</strong><br>
+                            Purchase non-perishable items in bulk to save money on everyday essentials.
+                        </p>
+                        <p class="card-text"><strong>Use Public Transportation</strong><br>
+                            Save on gas and parking by using public transportation or carpooling whenever possible.
+                        </p>
+                        <p class="card-text"><strong>Set Clear Savings Goals</strong><br>
+                            Establish specific savings goals, whether for an emergency fund, a vacation, or retirement, to stay motivated.
+                        </p>
+                    </div>                    
+                </div>
+
+                <div class="collapse" id="investmentDetails">
+                    <div class="card card-body">
+                        <h2 class="card-title">Investment Basics for Beginners</h2>
+                        <p class="card-text">Learn the fundamentals of investing and how to grow your wealth over time.</p>
+                        <hr>
+                        <p class="card-text"><strong>Understand Different Investment Types</strong><br>
+                            Familiarize yourself with common investment options like stocks, bonds, real estate, and mutual funds to diversify your portfolio.
+                        </p>
+                        <p class="card-text"><strong>Start Early</strong><br>
+                            The sooner you start investing, the more time your money has to grow through compound interest.
+                        </p>
+                        <p class="card-text"><strong>Diversify Your Portfolio</strong><br>
+                            Spread your investments across various asset classes to manage risk and increase potential returns.
+                        </p>
+                        <p class="card-text"><strong>Use Dollar-Cost Averaging</strong><br>
+                            Invest a fixed amount regularly, regardless of market conditions, to reduce the impact of short-term market volatility.
+                        </p>
+                        <p class="card-text"><strong>Focus on Long-Term Growth</strong><br>
+                            Invest with a long-term perspective, avoiding the temptation to react to market fluctuations for short-term gains.
+                        </p>
+                    </div>                    
+                </div>                
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
